@@ -8,7 +8,7 @@
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
-import resume from "../resume.pdf";
+import resume from "../Resume.pdf";
 
 /**
  * Home background image
@@ -36,7 +36,7 @@ const Home = ({ name, title }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "resume.pdf";
+    link.download = "Resume.pdf";
     link.click();
   };
 
